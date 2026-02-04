@@ -49,20 +49,9 @@
     margin-bottom: 2rem;
   }
   
-  .hero-logos img {
-    height: 60px;
-  }
-  
-  .hero-logos .pixel-gull {
-    height: 70px;
-    image-rendering: pixelated;
-  }
-  
-  .hero-logos .times {
-    font-family: 'Young Serif', serif;
-    font-size: 2rem;
-    color: var(--text-secondary);
-  }
+  .hero-logos img { height: 60px; }
+  .hero-logos .pixel-gull { height: 70px; image-rendering: pixelated; }
+  .hero-logos .times { font-family: 'Young Serif', serif; font-size: 2rem; color: var(--text-secondary); }
   
   .hero h1 {
     font-family: 'Young Serif', serif;
@@ -90,16 +79,8 @@
   
   .hero-meta strong { color: var(--text-primary); }
   
-  /* Sections */
-  section {
-    padding: 6rem 2rem;
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+  section { padding: 5rem 2rem; border-bottom: 1px solid var(--border); }
+  .container { max-width: 1000px; margin: 0 auto; }
   
   .section-number {
     font-family: 'Young Serif', serif;
@@ -113,9 +94,6 @@
     font-family: 'Young Serif', serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
   }
   
   .section-subtitle {
@@ -125,7 +103,6 @@
     max-width: 700px;
   }
   
-  /* Cards */
   .feature-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
@@ -134,19 +111,9 @@
     margin-bottom: 1.5rem;
   }
   
-  .feature-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+  .feature-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+  .feature-card p { color: var(--text-secondary); }
   
-  .feature-card p {
-    color: var(--text-secondary);
-  }
-  
-  /* Stats */
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -173,45 +140,16 @@
   .stat-value.red { color: var(--accent-red); }
   .stat-value.blue { color: var(--accent-blue); }
   
-  .stat-label {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-    margin-top: 0.5rem;
-  }
+  .stat-label { font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; }
   
-  /* Comparison Table */
-  .comparison {
-    overflow-x: auto;
-    margin: 2rem 0;
-  }
-  
-  .comparison table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95rem;
-  }
-  
-  .comparison th, .comparison td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
-  }
-  
-  .comparison th {
-    background: var(--bg-secondary);
-    font-weight: 600;
-    color: var(--text-secondary);
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-  }
-  
+  .comparison { overflow-x: auto; margin: 2rem 0; }
+  .comparison table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  .comparison th, .comparison td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+  .comparison th { background: var(--bg-secondary); font-weight: 600; color: var(--text-secondary); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; }
   .comparison tr:hover { background: var(--bg-secondary); }
-  
   .winner { color: var(--accent-green); font-weight: 600; }
   .loser { color: var(--accent-red); }
   
-  /* Preview Frame */
   .preview-frame {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -229,36 +167,14 @@
     border-bottom: 1px solid var(--border);
   }
   
-  .preview-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--border);
-  }
-  
+  .preview-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--border); }
   .preview-dot.red { background: #f85149; }
   .preview-dot.yellow { background: #d29922; }
   .preview-dot.green { background: #3fb950; }
+  .preview-url { flex: 1; text-align: center; font-size: 0.8rem; color: var(--text-secondary); }
+  .preview-frame img { width: 100%; display: block; }
+  .preview-frame iframe { width: 100%; height: 600px; border: none; }
   
-  .preview-url {
-    flex: 1;
-    text-align: center;
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-  }
-  
-  .preview-frame img {
-    width: 100%;
-    display: block;
-  }
-  
-  .preview-frame iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-  }
-  
-  /* Links */
   .cta-link {
     display: inline-flex;
     align-items: center;
@@ -273,60 +189,9 @@
   }
   
   .cta-link:hover { opacity: 0.9; }
-  
   .cta-link.green { background: var(--accent-green); }
   .cta-link.blue { background: var(--accent-blue); }
   
-  /* AI Section */
-  .ai-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
-  
-  .ai-card {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 1.5rem;
-  }
-  
-  .ai-card h4 {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .ai-card p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
-  }
-  
-  /* Discussion */
-  .discussion-list {
-    list-style: none;
-    margin: 2rem 0;
-  }
-  
-  .discussion-list li {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    padding: 1.25rem;
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    margin-bottom: 1rem;
-  }
-  
-  .discussion-list li::before {
-    content: "💬";
-    font-size: 1.5rem;
-  }
-  
-  /* Callout */
   .callout {
     background: var(--bg-card);
     border-left: 4px solid var(--accent-purple);
@@ -337,7 +202,26 @@
   
   .callout strong { color: var(--accent-purple); }
   
-  /* Footer */
+  /* Small squares grid for AI/Software section */
+  .squares-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .square-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+  }
+  
+  .square-card .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+  .square-card h4 { font-size: 0.95rem; margin-bottom: 0.5rem; }
+  .square-card p { font-size: 0.8rem; color: var(--text-secondary); }
+  
   footer {
     padding: 4rem 2rem;
     text-align: center;
@@ -368,95 +252,17 @@
     <img src="https://raw.githubusercontent.com/brycedmorgan/gullstack-dashboard/main/assets/pixel-gull.png" alt="GullStack" class="pixel-gull">
   </div>
   <h1>Partnership <span>Proposal</span></h1>
-  <p class="hero-sub">A comprehensive growth strategy for ATSports: sponsorship, SEO dominance, modern web presence, and AI-powered operations.</p>
+  <p class="hero-sub">SEO dominance, modern web presence, sponsorship opportunities, and AI-powered operations.</p>
   <div class="hero-meta">
     <span>Prepared for: <strong>Brad @ ATSports</strong></span>
     <span>Date: <strong>February 4, 2026</strong></span>
   </div>
 </section>
 
-<!-- 1. BSS Title Sponsorship -->
-<section id="bss">
-  <div class="container">
-    <div class="section-number">01</div>
-    <h2 class="section-title">🏟️ BestSportsSurfaces.com Title Sponsorship</h2>
-    <p class="section-subtitle">A growing platform connecting court builders with customers nationwide. ATSports gets top placement, brand integration, and qualified leads.</p>
-    
-    <div class="stats-grid">
-      <div class="stat">
-        <div class="stat-value">200+</div>
-        <div class="stat-label">Certified Vendors</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value purple">50</div>
-        <div class="stat-label">States Covered</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value blue">50K+</div>
-        <div class="stat-label">SEO Pages</div>
-      </div>
-      <div class="stat">
-        <div class="stat-value">∞</div>
-        <div class="stat-label">Lead Potential</div>
-      </div>
-    </div>
-    
-    <div class="feature-card">
-      <h3>🎯 What ATSports Gets</h3>
-      <p>• Title sponsor placement across all pages<br>
-      • "Powered by Acrytech" branding on court designer & cost estimator<br>
-      • Integrated Acrytech color palette (32 colors) in tools<br>
-      • Dedicated /acrytech landing page<br>
-      • Lead routing for surface coating inquiries</p>
-    </div>
-    
-    <div class="preview-frame">
-      <div class="preview-header">
-        <span class="preview-dot red"></span>
-        <span class="preview-dot yellow"></span>
-        <span class="preview-dot green"></span>
-        <span class="preview-url">bestsportssurfaces.com</span>
-      </div>
-      <iframe src="https://bestsportssurfaces.com" loading="lazy"></iframe>
-    </div>
-    
-    <a href="https://bestsportssurfaces.com" target="_blank" class="cta-link">Visit BestSportsSurfaces.com →</a>
-  </div>
-</section>
-
-<!-- 2. Donald Young Partnership -->
-<section id="donald-young" style="background: var(--bg-secondary);">
-  <div class="container">
-    <div class="section-number">02</div>
-    <h2 class="section-title">🎾 Donald Young Player Site</h2>
-    <p class="section-subtitle">ATSports sponsors Donald Young. We're building his official site with prominent ATSports branding — a backlink and brand awareness opportunity.</p>
-    
-    <div class="feature-card">
-      <h3>🔗 Sponsorship Integration</h3>
-      <p>• "Proudly sponsored by ATSports" banner<br>
-      • Acrytech product placement<br>
-      • Link to ATSports.com from high-traffic player page<br>
-      • Social media cross-promotion opportunities</p>
-    </div>
-    
-    <div class="preview-frame">
-      <div class="preview-header">
-        <span class="preview-dot red"></span>
-        <span class="preview-dot yellow"></span>
-        <span class="preview-dot green"></span>
-        <span class="preview-url">donald-young-site.vercel.app</span>
-      </div>
-      <iframe src="https://donald-young-site.vercel.app/" loading="lazy"></iframe>
-    </div>
-    
-    <a href="https://donald-young-site.vercel.app/" target="_blank" class="cta-link">View Donald Young Site →</a>
-  </div>
-</section>
-
-<!-- 3. SEO Competitive Analysis -->
+<!-- 1. SEO -->
 <section id="seo">
   <div class="container">
-    <div class="section-number">03</div>
+    <div class="section-number">01</div>
     <h2 class="section-title">📊 SEO: The Opportunity</h2>
     <p class="section-subtitle">ATSports is getting outranked by competitors. Here's the data — and the fix.</p>
     
@@ -508,7 +314,7 @@
       <p>• Technical SEO audit & fixes (meta tags, schema, speed)<br>
       • Content strategy: blog posts targeting competitor keywords<br>
       • Backlink building through BSS, Donald Young, PPA<br>
-      • Local SEO for installer network<br>
+      • Long-tail landing pages for schools, churches, HOAs, parks<br>
       • Monthly SEMrush tracking dashboard</p>
     </div>
     
@@ -529,68 +335,22 @@
   </div>
 </section>
 
-<!-- 3.5 Long-Tail SEO Targets -->
-<section id="longtail" style="background: var(--bg-secondary);">
+<!-- 2. Website Redesign -->
+<section id="website" style="background: var(--bg-secondary);">
   <div class="container">
-    <div class="section-number">03+</div>
-    <h2 class="section-title">🎯 Long-Tail Growth: Schools, Churches & More</h2>
-    <p class="section-subtitle">Untapped markets with high intent and low competition. Perfect for programmatic landing pages.</p>
-    
-    <div class="ai-grid">
-      <div class="ai-card">
-        <h4>🏫 Schools & Universities</h4>
-        <p>Athletic departments, PE programs, campus recreation. Consistent budget cycles, multi-court projects.</p>
-      </div>
-      <div class="ai-card">
-        <h4>⛪ Churches & Community Centers</h4>
-        <p>Youth programs, community outreach. Often have outdoor space and renovation budgets.</p>
-      </div>
-      <div class="ai-card">
-        <h4>🏢 HOAs & Condos</h4>
-        <p>Amenity upgrades drive property values. Recurring maintenance contracts possible.</p>
-      </div>
-      <div class="ai-card">
-        <h4>🏕️ Parks & Recreation</h4>
-        <p>Municipal budgets, grant funding opportunities. Multi-year maintenance agreements.</p>
-      </div>
-      <div class="ai-card">
-        <h4>🏨 Hotels & Resorts</h4>
-        <p>Guest amenities, branded court experiences. Premium installations with visibility.</p>
-      </div>
-      <div class="ai-card">
-        <h4>🏠 Residential Builders</h4>
-        <p>New construction communities, luxury home builders. Volume partnerships.</p>
-      </div>
-    </div>
-    
-    <div class="callout" style="margin-top: 2rem;">
-      <strong>Strategy:</strong> Create targeted landing pages for each segment (e.g., "Church Pickleball Court Installation in Texas"). Low competition keywords with high buyer intent.
-    </div>
-  </div>
-</section>
-
-<!-- 4. New Website -->
-<section id="website">
-  <div class="container">
-    <div class="section-number">04</div>
+    <div class="section-number">02</div>
     <h2 class="section-title">🌐 Modern ATSports.com Redesign</h2>
-    <p class="section-subtitle">A fresh, conversion-focused website that showcases ATSports products and connects customers with installers — with embedded tools.</p>
+    <p class="section-subtitle">A fresh, conversion-focused website that showcases ATSports products — built to your brand specs.</p>
     
     <div class="feature-card">
       <h3>✨ What's New</h3>
-      <p>• Modern design with ATSports brand colors (navy + red)<br>
-      • Oswald typography for bold, industrial headlines<br>
+      <p>• ATSports brand colors (navy blue + red)<br>
+      • Industrial Oswald typography<br>
       • Product showcase: Acrytech, CushionX, Faultline, RollX<br>
       • Embedded court designer with Acrytech colors<br>
       • Interactive installer map (powered by BSS)<br>
       • PPA partnership prominent throughout<br>
-      • 🎮 <strong>Pull the Paint</strong> — fun engagement game for visitors</p>
-    </div>
-    
-    <div class="feature-card" style="border-color: var(--accent-purple);">
-      <h3>🎮 Bonus: Pull the Paint Game</h3>
-      <p>Interactive game that keeps visitors engaged and builds brand awareness. Try it yourself!</p>
-      <a href="https://atsports-site.vercel.app/pull-the-paint/" target="_blank" class="cta-link" style="margin-top: 1rem;">Play Pull the Paint →</a>
+      • 🎮 <strong>Pull the Paint</strong> game for engagement</p>
     </div>
     
     <div class="preview-frame">
@@ -603,89 +363,153 @@
       <iframe src="https://brycedmorgan.github.io/atsports-redesign/" loading="lazy"></iframe>
     </div>
     
-    <a href="https://brycedmorgan.github.io/atsports-redesign/" target="_blank" class="cta-link">View Full Redesign →</a>
-  </div>
-</section>
-
-<!-- 5. AI Solutions -->
-<section id="ai">
-  <div class="container">
-    <div class="section-number">05</div>
-    <h2 class="section-title">🤖 AI-Powered Solutions</h2>
-    <p class="section-subtitle">Custom software and automation to streamline operations, improve customer experience, and scale without adding headcount.</p>
-    
-    <div class="ai-grid">
-      <div class="ai-card">
-        <h4>💬 AI Chat Agent</h4>
-        <p>24/7 website assistant that answers product questions, recommends coatings, and routes leads to the right installer.</p>
-      </div>
-      <div class="ai-card">
-        <h4>📧 Smart Lead Routing</h4>
-        <p>Automatically qualify incoming leads and route to the nearest certified installer based on project type and location.</p>
-      </div>
-      <div class="ai-card">
-        <h4>📊 Sales Intelligence</h4>
-        <p>AI analyzes customer inquiries to predict order size, recommend upsells, and prioritize high-value opportunities.</p>
-      </div>
-      <div class="ai-card">
-        <h4>🎥 Training Content</h4>
-        <p>Auto-generate installer training materials, product guides, and how-to videos from existing documentation.</p>
-      </div>
-      <div class="ai-card">
-        <h4>📱 Order Estimation</h4>
-        <p>Customers upload a photo of their court, AI estimates square footage and generates instant material quotes.</p>
-      </div>
-      <div class="ai-card">
-        <h4>📈 Marketing Automation</h4>
-        <p>Automated email campaigns, social media content generation, and seasonal promotion scheduling.</p>
-      </div>
-      <div class="ai-card">
-        <h4>💰 Financial Automation</h4>
-        <p>Automated invoicing, payment tracking, expense categorization, and financial reporting dashboards.</p>
-      </div>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="https://brycedmorgan.github.io/atsports-redesign/" target="_blank" class="cta-link">View Full Redesign →</a>
+      <a href="https://atsports-site.vercel.app/pull-the-paint/" target="_blank" class="cta-link green">🎮 Play Pull the Paint</a>
     </div>
   </div>
 </section>
 
-<!-- 6. Discussion -->
-<section id="discussion" style="background: var(--bg-secondary);">
+<!-- 3. BSS Sponsorship -->
+<section id="bss">
   <div class="container">
-    <div class="section-number">06</div>
-    <h2 class="section-title">💡 Let's Talk Process</h2>
-    <p class="section-subtitle">What manual processes are eating up your team's time? We can automate almost anything.</p>
+    <div class="section-number">03</div>
+    <h2 class="section-title">🏟️ BestSportsSurfaces.com Sponsorship</h2>
+    <p class="section-subtitle">A growing platform connecting court builders with customers nationwide. ATSports gets top placement, brand integration, and qualified leads.</p>
     
-    <ul class="discussion-list">
-      <li>
-        <div>
-          <strong>Sales workflow</strong><br>
-          <span style="color: var(--text-secondary);">How do leads come in today? What's the follow-up process? Where do deals get stuck?</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <strong>Customer order estimation</strong><br>
-          <span style="color: var(--text-secondary);">How do customers figure out how much paint they need? Can we automate the calculation?</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <strong>Installer network management</strong><br>
-          <span style="color: var(--text-secondary);">How do you track installer certifications, territories, and performance?</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <strong>Training & onboarding</strong><br>
-          <span style="color: var(--text-secondary);">What does a new installer need to know? Can we build a self-service training portal?</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <strong>Content & marketing</strong><br>
-          <span style="color: var(--text-secondary);">Who creates social posts, blog content, email campaigns? How much time does it take?</span>
-        </div>
-      </li>
-    </ul>
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-value">200+</div>
+        <div class="stat-label">Certified Vendors</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value purple">50</div>
+        <div class="stat-label">States Covered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value blue">50K+</div>
+        <div class="stat-label">SEO Pages</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">∞</div>
+        <div class="stat-label">Lead Potential</div>
+      </div>
+    </div>
+    
+    <div class="feature-card">
+      <h3>🎯 What ATSports Gets</h3>
+      <p>• Title sponsor placement across all pages<br>
+      • "Powered by Acrytech" branding on court designer & cost estimator<br>
+      • Integrated Acrytech color palette (32 colors) in tools<br>
+      • Dedicated /acrytech landing page<br>
+      • Lead routing for surface coating inquiries</p>
+    </div>
+    
+    <div class="preview-frame">
+      <div class="preview-header">
+        <span class="preview-dot red"></span>
+        <span class="preview-dot yellow"></span>
+        <span class="preview-dot green"></span>
+        <span class="preview-url">bestsportssurfaces.com</span>
+      </div>
+      <iframe src="https://bestsportssurfaces.com" loading="lazy"></iframe>
+    </div>
+    
+    <a href="https://bestsportssurfaces.com" target="_blank" class="cta-link">Visit BestSportsSurfaces.com →</a>
+  </div>
+</section>
+
+<!-- 4. Donald Young -->
+<section id="donald-young" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="section-number">04</div>
+    <h2 class="section-title">🎾 Donald Young Partnership</h2>
+    <p class="section-subtitle">ATSports sponsors Donald Young. His official site becomes a high-authority backlink and brand awareness driver.</p>
+    
+    <div class="feature-card">
+      <h3>🔗 SEO & Backlink Value</h3>
+      <p>• "Proudly sponsored by ATSports" with dofollow backlink<br>
+      • High domain authority from sports/tennis traffic<br>
+      • Link to ATSports.com from footer + sponsor section<br>
+      • Keyword targeting: "Donald Young pickleball," "tennis court coatings"</p>
+    </div>
+    
+    <div class="feature-card" style="border-color: var(--accent-green);">
+      <h3>🏟️ Donald Young Pickleball Facility</h3>
+      <p>Donald is opening a <strong>new pickleball facility</strong> — perfect opportunity for:<br><br>
+      • Showcase installation using Acrytech products<br>
+      • Case study content for ATSports blog<br>
+      • Photo/video assets for marketing<br>
+      • SEO content: "Donald Young Pickleball Courts powered by Acrytech"</p>
+    </div>
+    
+    <div class="preview-frame">
+      <div class="preview-header">
+        <span class="preview-dot red"></span>
+        <span class="preview-dot yellow"></span>
+        <span class="preview-dot green"></span>
+        <span class="preview-url">donald-young-site.vercel.app</span>
+      </div>
+      <iframe src="https://donald-young-site.vercel.app/" loading="lazy"></iframe>
+    </div>
+    
+    <a href="https://donald-young-site.vercel.app/" target="_blank" class="cta-link">View Donald Young Site →</a>
+  </div>
+</section>
+
+<!-- 5. AI / Software / Process (small squares) -->
+<section id="future">
+  <div class="container">
+    <div class="section-number">05</div>
+    <h2 class="section-title">🤖 Future: AI, Software & Automation</h2>
+    <p class="section-subtitle">Ideas to explore as the partnership grows. Not immediate — but worth discussing.</p>
+    
+    <div class="squares-grid">
+      <div class="square-card">
+        <div class="icon">💬</div>
+        <h4>AI Chat Agent</h4>
+        <p>24/7 website assistant</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">📧</div>
+        <h4>Lead Routing</h4>
+        <p>Auto-qualify & assign</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">📊</div>
+        <h4>Sales Intelligence</h4>
+        <p>Predict order size</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">🎥</div>
+        <h4>Training Content</h4>
+        <p>Auto-generate guides</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">📱</div>
+        <h4>Order Estimation</h4>
+        <p>Photo → quote</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">📈</div>
+        <h4>Marketing Auto</h4>
+        <p>Email & social</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">💰</div>
+        <h4>Financial Auto</h4>
+        <p>Invoicing & tracking</p>
+      </div>
+      <div class="square-card">
+        <div class="icon">🔄</div>
+        <h4>Process Design</h4>
+        <p>Workflow optimization</p>
+      </div>
+    </div>
+    
+    <div class="callout">
+      <strong>Let's discuss:</strong> What manual processes eat up your team's time? Sales workflow, order estimation, installer management, training — we can automate almost anything.
+    </div>
   </div>
 </section>
 
